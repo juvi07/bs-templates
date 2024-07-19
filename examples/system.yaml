@@ -1,6 +1,39 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: example-system
 spec:
   owner: eagles
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: podcast
+  description: Podcast playback
+spec:
+  owner: eagles
+  domain: playback
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: audio-playback
+  description: Audio playback system
+spec:
+  owner: eagles
+  domain: playback
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: artist-engagement-portal
+  description: Everything related to artists
+  tags:
+    - portal
+spec:
+  owner: eagles
+  domain: artists

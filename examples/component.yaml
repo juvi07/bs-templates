@@ -1,3 +1,4 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -15,3 +16,104 @@ spec:
   system: example-system
   consumesApis:
     - example-api
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore
+  # This is an extra long description with Markdown
+  description: |
+    [The Petstore](http://petstore.example.com) is an example API used to show features of the OpenAPI spec.
+    - First item
+    - Second item
+  links:
+    - url: https://github.com/swagger-api/swagger-petstore
+      title: GitHub Repo
+      icon: github
+spec:
+  type: service
+  lifecycle: experimental
+  owner: eagles
+  providesApis:
+    - petstore
+    - streetlights
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: playback-sdk
+  description: Audio and video playback SDK
+spec:
+  type: library
+  lifecycle: experimental
+  owner: eagles
+  system: audio-playback
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wayback-search
+  description: Search of the wayback machine
+spec:
+  type: service
+  lifecycle: production
+  owner: eagles
+  providesApis:
+    - wayback-search
+  consumesApis:
+    - wayback-archive
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wayback-archive-storage
+  description: Storage subsystem of the Wayback Archive
+spec:
+  type: service
+  lifecycle: production
+  owner: eagles
+  subcomponentOf: wayback-archive
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wayback-archive
+  description: Archive of the wayback machine
+spec:
+  type: service
+  lifecycle: production
+  owner: eagles
+  providesApis:
+    - wayback-archive
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wayback-archive-ingestion
+  description: Ingestion subsystem of the Wayback Archive
+spec:
+  type: service
+  lifecycle: production
+  owner: eagles
+  subcomponentOf: wayback-archive
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: queue-proxy
+  description: Queue Proxy
+  tags:
+    - go
+    - website
+spec:
+  type: website
+  lifecycle: production
+  owner: eagles
+  system: podcast
