@@ -3,6 +3,11 @@ kind: API
 metadata:
   name: example-api
   description: API consumed by the example frontend component.
+  tags:
+    - example
+    - api
+  annotations:
+    backstage.io/techdocs-entity: component:default/Github-Tutorial
 spec:
   type: openapi
   lifecycle: production
