@@ -7,3 +7,5 @@ spec:
     - ./api.yaml
     - ./component.yaml
     - ./system.yaml
+    - ./domain.yaml
+    - ./resource.yaml
