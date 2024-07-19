@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: example-entities
+spec:
+  targets:
+    - ./api.yaml
+    - ./component.yaml
+    - ./system.yaml
