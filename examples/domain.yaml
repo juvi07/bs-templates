@@ -12,7 +12,7 @@ metadata:
       title: Domain Metrics Dashboard
       icon: dashboard
 spec:
-  owner: eagles
+  owner: group:default/eagles
   subdomainOf: audio
 
 ---
@@ -28,7 +28,7 @@ metadata:
       title: Domain Metrics Dashboard
       icon: dashboard
 spec:
-  owner: eagles
+  owner: group:default/eagles
 
 ---
 apiVersion: backstage.io/v1alpha1
@@ -37,5 +37,5 @@ metadata:
   name: playback
   description: Everything related to audio playback
 spec:
-  owner: eagles
+  owner: group:default/eagles
   subdomainOf: audio

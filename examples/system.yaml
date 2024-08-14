@@ -4,7 +4,7 @@ kind: System
 metadata:
   name: example-system
 spec:
-  owner: eagles
+  owner: group:default/eagles
 
 ---
 apiVersion: backstage.io/v1alpha1
@@ -13,7 +13,7 @@ metadata:
   name: podcast
   description: Podcast playback
 spec:
-  owner: eagles
+  owner: group:default/eagles
   domain: playback
 
 ---
@@ -23,7 +23,7 @@ metadata:
   name: audio-playback
   description: Audio playback system
 spec:
-  owner: eagles
+  owner: group:default/eagles
   domain: playback
 
 ---
@@ -35,5 +35,5 @@ metadata:
   tags:
     - portal
 spec:
-  owner: eagles
+  owner: group:default/eagles
   domain: artists

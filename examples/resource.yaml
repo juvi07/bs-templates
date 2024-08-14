@@ -6,5 +6,5 @@ metadata:
   description: Stores artist details
 spec:
   type: database
-  owner: eagles
+  owner: group:default/eagles
   system: artist-engagement-portal

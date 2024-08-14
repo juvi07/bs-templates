@@ -12,7 +12,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   definition: |
     openapi: 3.0.0
     info:
@@ -45,7 +45,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: eagles
+  owner: group:default/eagles
   definition:
     $text: ./petstore.oas.yaml
 
@@ -69,7 +69,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: eagles
+  owner: group:default/eagles
   definition:
     $text: ./petstore-webhook.oas.yaml
 
@@ -82,7 +82,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   definition:
     $text: https://github.com/APIs-guru/openapi-directory/blob/main/APIs/archive.org/search/1.0.0/openapi.yaml
 
@@ -95,7 +95,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   definition:
     $text: https://github.com/APIs-guru/openapi-directory/blob/main/APIs/archive.org/wayback/1.0.0/openapi.yaml
 
@@ -114,7 +114,7 @@ metadata:
 spec:
   type: asyncapi
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   definition: |
     asyncapi: 3.0.0
     info:
@@ -383,7 +383,7 @@ metadata:
 spec:
   type: graphql
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   definition: |
     schema {
       query: Root

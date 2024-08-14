@@ -12,7 +12,7 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   system: example-system
   consumesApis:
     - example-api
@@ -34,7 +34,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: eagles
+  owner: group:default/eagles
   providesApis:
     - petstore
     - streetlights
@@ -48,7 +48,7 @@ metadata:
 spec:
   type: library
   lifecycle: experimental
-  owner: eagles
+  owner: group:default/eagles
   system: audio-playback
 
 ---
@@ -60,7 +60,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   providesApis:
     - wayback-search
   consumesApis:
@@ -75,7 +75,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   subcomponentOf: wayback-archive
 
 ---
@@ -87,7 +87,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   providesApis:
     - wayback-archive
 
@@ -100,7 +100,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   subcomponentOf: wayback-archive
 
 ---
@@ -115,5 +115,5 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: eagles
+  owner: group:default/eagles
   system: podcast
