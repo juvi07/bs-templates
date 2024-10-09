@@ -22,6 +22,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: petstore
+  annotations:
+    pagerduty.com/service-id: P3IKHYN #testing purpose only
   # This is an extra long description with Markdown
   description: |
     [The Petstore](http://petstore.example.com) is an example API used to show features of the OpenAPI spec.
